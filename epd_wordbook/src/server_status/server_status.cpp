@@ -6,11 +6,8 @@ extern UBYTE *BlackImage;
 extern bool Wifi_Status;
 void action(bool Open) {
     HTTPClient http;
-    http.begin("http://api.amzcd.top:9300/device/"
-               "control?action=on&token="
-               "WkRkZ1A3K1ZzZzY0Rlpsa0hsNS9QQ3QxWkh4SDZHVHdYbTNLQ1V0YlhkM3ZUSDV"
-               "sQlZxdlh5eXlpQkdYMmN4N29YNGl0dmdYQm9wTlRFTnJObFA5dDhRNmtwT0tiTE"
-               "1jcWI5NTJBWWpyVHc9");
+    http.begin("");//这里是开机卡url
+               
     int httpCode = http.GET();
 
     if (httpCode > 0) {

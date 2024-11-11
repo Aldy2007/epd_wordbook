@@ -1,6 +1,6 @@
 #include "wordbook.h"
 #include "../global.h"
-#define API "http://172.28.1.10:8888"
+#define API "http://172.28.1.10:8888"//替换为自己的服务器
 #define SPACE 5
 #define WORD false
 #define MEANING true

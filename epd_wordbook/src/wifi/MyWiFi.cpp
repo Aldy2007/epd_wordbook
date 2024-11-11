@@ -2,6 +2,7 @@
 #include "../global.h"
 #include <Arduino.h>
 #include <HTTPClient.h>
+#define API ""//替换为自己的服务器的页面
 #define WIFI_TRY_TIMES 3
 
 const char *MyWiFi::ssid = nullptr;
@@ -88,7 +89,7 @@ void MyWiFi::check(uint8_t *&BlackImage, bool &Wifi_Status) {
     if (ret) {
         Serial.println("Ping http://www.265.com Success");
         // 检查 服务器状态
-        if (Myping("http://pi.amzcd.top:9191")) {
+        if (Myping(API)) { 
             Paint_DrawString_EN(130, 1, "Online", &Font12, WHITE, BLACK);
             Wifi_Status = true;
         } else {
