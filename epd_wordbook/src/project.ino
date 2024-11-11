@@ -12,7 +12,7 @@ Funcptr funcRefresh[10], func[10][10], funcinit[10];
 /*--------------WIFI CONFIG------------------------------*/
 const char *ssid = "ChangyanSTUaiedu11";
 const char *password = "zhktzhkt";
-bool Wifi_Status = false;
+bool Wifi_Status = false;ssss
 
 IPAddress staticIP(172, 28, 1, 19);
 IPAddress gateway(172, 28, 1, 154);
