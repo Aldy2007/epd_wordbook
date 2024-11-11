@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 def generate_char_bitmap(char, font_size, image_size):
     image = Image.new('1', image_size, 0)
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("zimo.ttf", font_size)
+    font = ImageFont.truetype("font.ttf", font_size)
     
     bbox = draw.textbbox((0, 0), char, font=font)
     text_width = bbox[2] - bbox[0]

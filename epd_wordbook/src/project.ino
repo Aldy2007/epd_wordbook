@@ -10,8 +10,8 @@ Funcptr funcRefresh[10], func[10][10], funcinit[10];
 //         刷新            功能            初始化
 
 /*--------------WIFI CONFIG------------------------------*/
-const char *ssid = "ChangyanSTUaiedu11";
-const char *password = "zhktzhkt";
+const char *ssid = "";
+const char *password = "";
 bool Wifi_Status = false;
 
 IPAddress staticIP(172, 28, 1, 19);
